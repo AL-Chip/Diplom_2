@@ -25,3 +25,4 @@ def login_user(create_user):
     }
     response_login = requests.post(f"{URL}{ENDPOINT.LOGIN.value}", data=payload)
     return response_login.json()["accessToken"]
+
